@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Fridge Keeper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(135deg, #A6D0FF, #4CAFDB);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.header-container h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header-btn {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    background-color: #fff;
+    color: #4CAFDB;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 2px solid #4CAFDB;
+}
+
+.header-btn:hover {
+    background-color: #4CAFDB;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* About Section */
+.about {
+    padding: 5rem 0;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 3rem;
+    color: #4CAFDB;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+.feature {
+    background: #f1f1f1;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+    width: 80px;
+    margin-bottom: 1.5rem;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color:#4CAFDB;
+    font-weight: 600;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Download Section */
+.download {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #5B9BD5, #7EC8E3);
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.download .section-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.download .section-description {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.download-btn {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    background-color: #fff;
+    color: #4CAFDB;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border: 2px solid #4CAFDB;
+}
+
+.download-btn:hover {
+    background-color: #4CAFDB;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+</style>
+
+</head>
+<body>
+    <header id="home">
+        <div class="header-container">
+            <h1>SCANITOR</h1>
+<h2>The Smartest Fridge Keeper</h1>
+            <p>Smarter fridge management to reduce food waste and keep your groceries fresh.</p>
+<br><br><br>
+            <a href="#about" class="btn header-btn">Learn More</a>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <h2 class="section-title">About the Application</h2>
+        <p class="section-description">The Scanitor helps manage groceries effectively with IoT, barcode scanning, and real-time updates, all aimed at reducing food waste and promoting sustainability.</p>
+        <div class="features">
+            <div class="feature">
+                <img src="https://img.icons8.com/ios/50/000000/barcode.png" alt="Barcode Scanner">
+                <h3>Barcode Scanner</h3>
+                <p>Effortlessly track your groceries with the integrated barcode scanner.</p>
+            </div>
+            <div class="feature">
+                <img src="https://img.icons8.com/ios/50/000000/cloud.png" alt="Cloud Database">
+                <h3>Cloud Database</h3>
+                <p>Store your grocery data securely in the cloud for easy access anywhere.</p>
+            </div>
+            <div class="feature">
+                <img src="https://img.icons8.com/ios/50/000000/android.png" alt="Mobile App">
+                <h3>Mobile App</h3>
+                <p>Access your fridge remotely with the SCANITOR app for real-time updates.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <h2 class="section-title">Download the App</h2>
+        <p class="section-description">Start managing your fridge more efficiently by downloading the SCANITOR app.</p>
+        <a href="C:\Users\user\logincred\Application\SCANITOR.apk" class="btn download-btn" download>Download APK</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Smart Fridge Keeper. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
